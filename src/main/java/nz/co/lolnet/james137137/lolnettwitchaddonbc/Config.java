@@ -25,12 +25,18 @@ public class Config {
 
     //Your Twitter Access Token Secret
     public static String accessTokenSecret;
+    
+    public static int twitterID;
+    
+    public static String querry;
 
     public Config(Configuration config) {
         consumerKey = config.getString("consumerKey");
         consumerSecret = config.getString("consumerSecret");
         accessToken = config.getString("accessToken");
         accessTokenSecret = config.getString("accessTokenSecret");
+        querry = config.getString("querry");
+        twitterID = config.getInt("twitterID");
     }
 
 }
